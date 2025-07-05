@@ -1,0 +1,110 @@
+/* Admin interface styling */
+.easyup-field-block {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+
+/* transition slide doux*/
+.easyup-edit-form {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease-out;
+}
+/* largeur du bloc */
+.easyup-edit-form.open {
+    max-height: 800px; /* valeur suffisamment grande */
+}
+
+.easyup-field-block input[type="text"],
+.easyup-field-block input[type="email"],
+.easyup-field-block input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.easyup-field-block button {
+    padding: 6px 14px;
+    background-color: #007cba;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.easyup-field-block button:hover {
+    background-color: #005e9e;
+}
+
+.easyup-field-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.easyup-shortcode-text {
+    font-weight: bold;
+    color: #444;
+    margin-right: 10px;
+    flex: 1;
+    word-break: break-word;
+}
+
+.easyup-copy-button {
+    background-color: #3c9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.easyup-copy-button:hover {
+    background-color: #36b684;
+}
+
+.easyup-settings-toggle {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.easyup-settings-panel {
+    display: none;
+    padding: 10px;
+    background: #eef1f5;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+}
+
+.easyup-settings-panel.active {
+    display: block;
+}
+
+.easyup-delete-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.easyup-delete-button svg {
+    width: 18px;
+    height: 18px;
+    fill: red;
+}
+

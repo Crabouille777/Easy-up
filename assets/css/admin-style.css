@@ -1,0 +1,77 @@
+.easyup-admin-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.easyup-admin-container h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.easyup-form-block {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.easyup-form-block input[type="text"],
+.easyup-form-block input[type="email"],
+.easyup-form-block input[type="number"] {
+  width: 100%;
+  padding: 6px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.easyup-form-block label {
+  display: block;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.easyup-admin-shortcode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eef;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.easyup-admin-shortcode .copy-button {
+  margin-left: 10px;
+}
+
+.easyup-dropdown {
+  margin-top: 10px;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.easyup-dropdown-toggle {
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-top: 5px;
+  color: #0073aa;
+}
+
+.easyup-delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+

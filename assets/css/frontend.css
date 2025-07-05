@@ -1,0 +1,125 @@
+/* ================================
+   Wrapper du formulaire
+   ================================ */
+.easyup-upload-wrapper {
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ================================
+   Style du bouton "Envoyer"
+   ================================ */
+.easyup-submit-button {
+    background-color: #0073aa;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.easyup-submit-button:hover {
+    background-color: #005f8d;
+}
+
+/* ================================
+   Style de la prévisualisation
+   ================================ */
+.easyup-preview {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.easyup-preview img,
+.easyup-preview iframe {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Icône PDF spécifique */
+.easyup-preview .pdf-icon {
+    font-size: 14px;
+    font-weight: bold;
+    color: #d32f2f;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* ================================
+   Champ email (si utilisé)
+   ================================ */
+.easyup-email-field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+/* ================================
+   Message de succès
+   ================================ */
+.easyup-success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.easyup-preview {
+  display: flex;
+  flex-wrap: wrap; /* Permet de passer à la ligne si trop long */
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.easyup-preview-item img,
+.easyup-preview .pdf-icon,
+.easyup-preview .other {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.easyup-preview-item p {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.easyup-delete-button {
+  all: unset; /* Supprime tous les styles imposés */
+  font: inherit; /* Utilise la police par défaut */
+  padding: 3px 6px;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+
+
+  .easyup-upload-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}

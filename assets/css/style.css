@@ -1,0 +1,131 @@
+/* Style général */
+#easyup-container {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+.easyup-field-block {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 12px;
+    background: #f9f9f9;
+    position: relative;
+}
+
+.easyup-field-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.easyup-shortcode {
+    background: #f1f1f1;
+    border: 1px dashed #bbb;
+    padding: 6px 10px;
+    margin: 5px 0;
+    font-family: monospace;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.easyup-copy-button {
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 4px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.easyup-copy-button:hover {
+    background: #005c99;
+}
+
+.easyup-dropdown {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #ccc;
+    display: none;
+}
+
+.easyup-toggle-dropdown {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.easyup-form-row {
+    margin-bottom: 10px;
+}
+
+.easyup-form-row label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.easyup-form-row input {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.easyup-add-button {
+    background: #28a745;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.easyup-add-button:hover {
+    background: #218838;
+}
+
+.easyup-submit-button {
+    background: #0073aa;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.easyup-submit-button:hover {
+    background: #005c99;
+}
+
+.easyup-remove-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    color: red;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* Formulaire de modification caché par défaut avec transition fluide */
+.easyup-edit-form {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+}
+
+/* Formulaire de modification visible (déplié) */
+.easyup-edit-form.open {
+    max-height: 1000px; /* Doit être suffisant pour tout afficher */
+}
+
