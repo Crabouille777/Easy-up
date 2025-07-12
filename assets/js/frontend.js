@@ -82,6 +82,20 @@ input.addEventListener('change', function () {
     sendButton.addEventListener('click', function (e) {
       e.preventDefault();
       message.style.color = 'green';
+      message.textContent = '';
+
+  // Vérifie si l'utilisateur est connecté (via présence de données utilisateur)
+  const isUserLoggedIn = (
+    typeof easyup_frontend.user_data !== 'undefined' &&
+    easyup_frontend.user_data &&
+    Object.keys(easyup_frontend.user_data).length > 0
+  );
+
+  if (!isUserLoggedIn) {
+    message.textContent = "⚠️ Vous devez être connecté pour envoyer des fichiers.";
+    message.style.color = 'red';
+    return;
+  }
 
       if (!selectedFiles.length) {
         message.textContent = "Aucun fichier sélectionné.";
