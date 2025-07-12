@@ -5,9 +5,6 @@ if (!defined('ABSPATH')) exit;
 add_action('wp_enqueue_scripts', 'easyup_enqueue_frontend_assets');
 
 function easyup_enqueue_frontend_assets() {
-    if (!is_user_logged_in()) {
-        return;
-    }
 
     wp_enqueue_style(
         'easyup-frontend-style',
@@ -23,11 +20,15 @@ function easyup_enqueue_frontend_assets() {
     );
 
     $current_user = wp_get_current_user();
-    $user_data = [
-        'email'      => $current_user->user_email,
-        'first_name' => $current_user->first_name,
-        'last_name'  => $current_user->last_name,
-    ];
+    $user_data = [];
+
+    if (is_user_logged_in()) {
+        $user_data = [
+            'email'      => $current_user->user_email,
+            'first_name' => $current_user->first_name,
+            'last_name'  => $current_user->last_name,
+        ];
+    }
 
     wp_localize_script('easyup-frontend', 'easyup_frontend', [
         'ajax_url'  => admin_url('admin-ajax.php'),
