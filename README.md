@@ -1,3 +1,5 @@
+# Easy-up
+
 ==============================================================================================================
 
 * Note de l'auteur :
@@ -7,15 +9,13 @@ Merci de ne pas le vendre ou le monétiser sous une forme quelconque.
 
 ==============================================================================================================
 
-# Easy-up
-
 Plugin WordPress permettant aux utilisateurs de téléverser des fichiers images et PDF via un formulaire personnalisé, avec envoi par email et prévisualisation dynamique.
 
 ---
 
 ## Description
 
-Easy-up offre un formulaire simple et sécurisé pour permettre à vos visiteurs (ou utilisateurs connectés) de téléverser des images et documents PDF. Les fichiers sont affichés en prévisualisation avant envoi, puis transmis par email à l’administrateur du site.
+Easy-up offre un formulaire simple et sécurisé pour permettre à vos visiteurs (ou utilisateurs connectés) de téléverser des images et documents PDF. Les fichiers sont affichés en prévisualisation avant envoi, puis transmis par email (paramétrable).
 
 ---
 
